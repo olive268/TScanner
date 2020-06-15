@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_background"
+    tools:context=".Result">
+
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:id="@+id/result"
+        android:text="RESULT:"
+        android:fontFamily="monospace"
+        android:scrollbars = "vertical"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_margin="15dp"
+        android:id="@+id/tv"
+        android:layout_below="@id/result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:fontFamily="monospace"
+        android:scrollbars = "vertical"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:onClick="saveResult"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:elevation="30dp"
+        android:background="@drawable/camera_btn"
+        android:src="@drawable/ic_save_black_24dp" />
+</RelativeLayout>
+
+
